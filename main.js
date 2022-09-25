@@ -20,7 +20,7 @@ function pagarMerienda(opccionMerienda) {
 }
 function elegirBebidaalmuerzocena( precio1 , precio2 , precio3 ){
     alert("excelente eleccion!, ahora elige la bebida!")
-    alert("El menu de la bebida es: 1-cocacola, 2-pepsi")
+    alert("La bebida del menu es: 1- Coca cola, 2-Pepsi")
     let opccionbebida = prompt("ingresa eleccion")
     switch(opccionbebida) {
         case "1":
@@ -37,7 +37,7 @@ function elegirBebidaalmuerzocena( precio1 , precio2 , precio3 ){
     }
 }
 function menuMerienda() {
-    alert("El menu de la merienda es: 1-cafe con medialunas, 2-cafe con leche y un tostado, 3-jugo exprimdo de naranja con tostado")
+    alert("El menu de la merienda es: 1- Cafe con medialunas, 2- Cafe con leche y un tostado, 3- Jugo exprimdo de naranja con un tostado")
     let opccionMerienda = prompt("ingresar opicion")
     switch(opccionMerienda){
         case "1":
@@ -55,7 +55,7 @@ function menuMerienda() {
     }
 }
 function menuAlmuerzocena(eleccion) {
-    alert("El menu del almuerzo y la cena es: 1-hambuerguesa con queso y papas, 2-milanesa a la napolitana con pure 3- pollo al spiedo con papas fritas.")
+    alert("El menu del almuerzo y la cena es: 1- Hambuerguesa con queso y papas, 2- Milanesa a la napolitana con pure 3- Pollo al spiedo con papas fritas.")
     let opccion = prompt("ingresar eleccion")
     switch(opccion){
         case "1":
@@ -81,7 +81,7 @@ function menu(eleccion) {
         alert("okey le deja la carta!")
         menuAlmuerzocena()
     } else if(eleccion === "merienda") {
-        alert("okey le deja la carta")
+        alert("okey le deja la carta!")
         menuMerienda()
     } else {
         alert("todavia eso no tenemos")
@@ -90,12 +90,12 @@ function menu(eleccion) {
  
 function sentarse(dondeComer) {
     if(dondeComer){
-        alert("perfecto se lo armo para comer aca")
-        let comidaAdentro = prompt("que va a comer almuerzo, merienda o cena?")
+        alert("Perfecto, se lo armo para comer aca")
+        let comidaAdentro = prompt("Que va a comer almuerzo, merienda o cena?")
         menu(comidaAdentro)
     }else {
-        alert("perfecto se lo armo para llevar!")
-        let comidaLlevar = prompt("que va a comer almuerzo, merienda o cena?")
+        alert("Perfecto, se lo armo para llevar!")
+        let comidaLlevar = prompt("Que va a comer almuerzo, merienda o cena?")
         menu(comidaLlevar)
     }
 }
